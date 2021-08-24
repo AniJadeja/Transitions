@@ -69,8 +69,10 @@ fadeout - make it slowly fade out of view.xml
         android:duration="300"
         android:repeatCount="0" />
 </set>
+                               
 ```
 push_down_in.xml
+                               
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
@@ -79,6 +81,7 @@ push_down_in.xml
 ```
 
 push_down_out.xml
+                                                                                      
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
@@ -87,6 +90,7 @@ push_down_out.xml
 ```
 
 push_left_in.xml
+                                                                                     
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
