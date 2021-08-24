@@ -1,13 +1,12 @@
 # Transitions
 
 
-
-    If you want to apply the animation on "activity" start. then write below code.
+If you want to apply the animation on "activity" start. then write below code.
 ```
 startActivity(intent);
 overridePendingTransition(R.anim.opening_anim, R.anim.closing_anim);
 ```
-    If you want to apply the animation on "dialog" then firstly add below code in styles.xml file
+If you want to apply the animation on "dialog" then firstly add below code in styles.xml file
 ```
 <style name="my_style”> 
  <item 
