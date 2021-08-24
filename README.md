@@ -32,9 +32,9 @@ Animation animFadein = AnimationUtils.loadAnimation(getApplicationContext(),R.an
 txtMessage.startAnimation(animFadein);
 
     Below, I have mentioned most of the animation .xml code.
-
+```
 appear - make it just appear.xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
     <alpha
@@ -44,9 +44,9 @@ appear - make it just appear.xml
            android:toAlpha="1.0"/>
 </set>
 
-===========================================
+```
 make it slowly fades into view.xml
-
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
     <alpha
@@ -57,9 +57,9 @@ make it slowly fades into view.xml
         android:repeatCount="0" />
 </set>
 
-==========================================
+```
 fadeout - make it slowly fade out of view.xml
-
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
     <alpha
@@ -69,80 +69,79 @@ fadeout - make it slowly fade out of view.xml
         android:duration="300"
         android:repeatCount="0" />
 </set>
-
-==========================================
+```
 push_down_in.xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
     <translate android:fromYDelta="-100%p" android:toYDelta="0" android:duration="400"/>
 </set>
+```
 
-==========================================
 push_down_out.xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
     <translate android:fromYDelta="0" android:toYDelta="100%p" android:duration="400"/>
 </set>
+```
 
-==========================================
 push_left_in.xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
     <translate android:fromXDelta="100%p" android:toXDelta="0" android:duration="300"/>
     <alpha android:fromAlpha="0.0" android:toAlpha="1.0" android:duration="300" />
 </set>
 
-==========================================
+```
 push_left_out.xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
     <translate android:fromXDelta="0" android:toXDelta="-100%p" android:duration="300"/>
     <alpha android:fromAlpha="1.0" android:toAlpha="0.0" android:duration="300" />
 </set>
 
-==========================================
+```
 push_right_in.xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
     <translate android:fromXDelta="-100%p" android:toXDelta="0" android:duration="300"/>
     <alpha android:fromAlpha="0.0" android:toAlpha="1.0" android:duration="300" />
 </set>
 
-==========================================
+```
 push_right_out.xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
     <translate android:fromXDelta="0" android:toXDelta="100%p" android:duration="300"/>
     <alpha android:fromAlpha="1.0" android:toAlpha="0.0" android:duration="300" />
 </set>
 
-==========================================
+```
 push_up_in.xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
     <translate android:fromYDelta="100%p" android:toYDelta="0" android:duration="300"/>
     <alpha android:fromAlpha="0.0" android:toAlpha="1.0" android:duration="300" />
 </set>
 
-==========================================
+```
 push_up_out.xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
     <translate android:fromYDelta="0" android:toYDelta="-100%p" android:duration="300"/>
     <alpha android:fromAlpha="1.0" android:toAlpha="0.0" android:duration="300" />
 </set>
+```
 
-==========================================
 rotation.xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <rotate
  xmlns:android="http://schemas.android.com/apk/res/android"
@@ -152,10 +151,10 @@ rotation.xml
     android:pivotY="50%"
     android:duration="0" android:fillAfter="true">
 </rotate>
+```
 
-==========================================
 scale_from_corner.xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
     <scale android:fromYScale="0" android:toYScale="1.0"
@@ -163,10 +162,9 @@ scale_from_corner.xml
         android:duration="500" android:pivotX="100%"
         android:pivotY="100%" />
 </set>
-
-==========================================
+```
 scale_torwards_corner.xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
     <scale android:fromYScale="1.0" android:toYScale="0"
@@ -174,9 +172,9 @@ scale_torwards_corner.xml
         android:duration="500"/>
 </set>
 
-==========================================
+```
 shrink_and_rotate_a(exit).xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
 <scale
@@ -195,9 +193,9 @@ shrink_and_rotate_a(exit).xml
     android:startOffset="100"
 />
 
-==========================================
+```
 shrink_and_rotate_b(entrance).xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
 <scale
@@ -218,9 +216,10 @@ shrink_and_rotate_b(entrance).xml
     android:startOffset="400"
 />
 
-========================================
-blink.xml
 
+```
+blink.xml
+```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
     <alpha android:fromAlpha="0.0"
@@ -231,9 +230,9 @@ blink.xml
       android:repeatCount="infinite"/>
 </set>
 
-========================================
+```
 ZoomIn.xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android"
    android:fillAfter="true" >
@@ -249,9 +248,9 @@ ZoomIn.xml
     </scale>
 </set>
 
-========================================
+```
 ZoomOut.xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android"
    android:fillAfter="true" >
@@ -267,9 +266,9 @@ ZoomOut.xml
     </scale>
 </set>
 
-========================================
+```
 FadeIn.xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android"
    android:fillAfter="true" >
@@ -280,9 +279,9 @@ FadeIn.xml
        android:toAlpha="1.0" />
 </set>
 
-========================================
+```
 FadeOut.xml
-
+```
 <set xmlns:android="http://schemas.android.com/apk/res/android"
    android:fillAfter="true" >
     <alpha
@@ -292,9 +291,9 @@ FadeOut.xml
        android:toAlpha="0.0" />
 </set>
 
-========================================
+```
 Move.xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <set
    xmlns:android="http://schemas.android.com/apk/res/android"
@@ -306,9 +305,9 @@ Move.xml
        android:duration="1000" />
 </set>
 
-========================================
+```
 SlideDown.xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android"
    android:fillAfter="true">
@@ -320,10 +319,10 @@ SlideDown.xml
        android:toXScale="1.0"
        android:toYScale="1.0" />
 </set>
+```
 
-========================================
 SlideUp.xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android"
    android:fillAfter="true" >
@@ -335,10 +334,9 @@ SlideUp.xml
        android:toXScale="1.0"
        android:toYScale="0.0" />
 </set>
-
-========================================
+```
 Bounce.xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android"
    android:fillAfter="true"
@@ -350,4 +348,4 @@ Bounce.xml
        android:toXScale="1.0"
        android:toYScale="1.0" />
 </set>
-
+```
