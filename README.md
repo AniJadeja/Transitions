@@ -3,36 +3,38 @@
 
 
     If you want to apply the animation on "activity" start. then write below code.
-
+```
 startActivity(intent);
 overridePendingTransition(R.anim.opening_anim, R.anim.closing_anim);
-
+```
     If you want to apply the animation on "dialog" then firstly add below code in styles.xml file
-
+```
 <style name="my_style”> 
  <item 
   name="@android:windowEnterAnimation">@anim/opening_anim</item> 
  <item 
  name="@android:windowExitAnimation">@anim/closing_anim</item>
 </style>
-
+```
 Use this style as I defined below.
-
+```
 final Dialog dialog = new Dialog(activity);
 dialog.getWindow().getAttributes().windowAnimations = R.style.my_style;
 
     If you want to apply the animation on "view" then write below code
 
 txtMessage = (TextView) findViewById(R.id.txtMessage);
-     
+  ```
+  ```
 // load the animation
 Animation animFadein = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.animation); 
-
+```
+```
 // start the animation
 txtMessage.startAnimation(animFadein);
-
-    Below, I have mentioned most of the animation .xml code.
 ```
+    Below, I have mentioned most of the animation .xml code.
+
 appear - make it just appear.xml
 ```
 <?xml version="1.0" encoding="utf-8"?>
